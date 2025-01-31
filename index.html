@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYXMP6779S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-EYXMP6779S');
+    </script>
+    
+    <title>Portafolio Diego Pazos</title>
+
+    <!-- Meta tags existentes -->
+    <meta name="description" content="Portfolio de Diego Pazos - Desarrollador Web Full Stack especializado en crear experiencias digitales únicas y soluciones web innovadoras.">
+    <meta name="keywords" content="desarrollo web, full stack, portfolio, Diego Pazos, proyectos web, diseño web">
+    <meta name="author" content="Diego Pazos">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ddepazos.github.io/port/">
+    <meta property="og:title" content="Portfolio Diego Pazos - Desarrollador Web Full Stack">
+    <meta property="og:description" content="Desarrollador Web Full Stack especializado en crear experiencias digitales únicas">
+    <meta property="og:image" content="URL_DE_TU_IMAGEN">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ddepazos.github.io/port/">
+    <meta property="twitter:title" content="Portfolio Diego Pazos - Desarrollador Web Full Stack">
+    <meta property="twitter:description" content="Desarrollador Web Full Stack especializado en crear experiencias digitales únicas">
+    <meta property="twitter:image" content="URL_DE_TU_IMAGEN">
+
+    <!-- Agregar antes de los otros scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("MxxrOLdRiz3tV9i51");
+        })();
+    </script>
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <nav class="main-nav" role="navigation">
+            <h1>Diego Pazos</h1>
+            <button class="theme-toggle" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero-section" role="region" aria-label="Sección de inicio">
+        <div class="hero-content">
+            <h2>Desarrollador Web, Diseñador Grafico, Diseñador UxUi</h2>
+            <p>Creando experiencias digitales únicas</p>
+        </div>
+    </section>
+
+    <section class="cta-section" role="region" aria-label="Sección de llamada a la acción">
+        <div class="dragon-background">
+            <div class="animation-container">
+                <div class="scene">
+                    <svg class="shape-container technical-grid" viewBox="0 0 3000 2000" role="img" aria-label="Fondo de grilla técnica">
+                        <pattern id="techGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <line class="grid-line" x1="0" y1="0" x2="20" y2="20"/>
+                            <line class="grid-line" x1="20" y1="0" x2="0" y2="20"/>
+                        </pattern>
+                        <g class="dragon-structure" transform="scale(1.5) translate(400, 400)">
+                            <path class="tech-shape dragon-body" d="M100,300 C400,100 800,500 1200,300 C1600,100 1800,500 2000,300" fill="none"/>
+                            <g class="internal-structure">
+                                <path class="tech-line spine" d="M100,300 Q500,200 900,300"/>
+                                <g class="construction-lines">
+                                    <line class="tech-line" x1="400" y1="100" x2="400" y2="500"/>
+                                    <line class="tech-line" x1="800" y1="50" x2="800" y2="550"/>
+                                    <line class="tech-line" x1="1200" y1="100" x2="1200" y2="500"/>
+                                    <line class="tech-line" x1="1600" y1="50" x2="1600" y2="550"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="cta-content">
+            <h2>¿Listo para comenzar un proyecto?</h2>
+            <p>Trabajemos juntos para hacer realidad tus ideas</p>
+            <button id="contact-btn" class="cta-button">Contáctame</button>
+        </div>
+    </section>
+
+    <section class="carousel-container" role="region" aria-label="Galería de proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="carousel" role="region" aria-label="Galería de proyectos">
+            <article class="carousel-item active" aria-label="Proyecto 1">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="./assets/portfolioimg/convertido_3.webp" alt="Vista previa de Corpus Tattoo">
+                    </div>
+                </div>
+            </article>
+
+            <article class="carousel-item" aria-label="Proyecto 2">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="./assets/portfolioimg/convertido_16.webp" alt="Vista previa de Corpus Tatuajes">
+                    </div>
+                </div>
+            </article>
+
+            <article class="carousel-item" aria-label="Proyecto 3">
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="./assets/portfolioimg/convertido_17.webp" alt="Vista previa de Tech Future">
+                    </div>
+                </div>
+            </article>
+
+            <button class="carousel-control prev" aria-label="Proyecto anterior">&#10094;</button>
+            <button class="carousel-control next" aria-label="Siguiente proyecto">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="video-section" class="video-section" role="region" aria-label="Sección de video">
+        <div class="video-container">
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/JoZKuoR5rtw" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <main class="projects-container" role="main">
+        <section class="projects-grid" role="region" aria-label="Grilla de proyectos">
+            <!-- Proyecto 1 -->
+            <article class="project-card" data-project="infografia">
+                <div class="card-image">
+                    <img src="./assets/portfolioimg/convertido_10.webp" alt="Infografía" class="card-bg-image">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Infografia</h3>
+                    <p class="card-description">experiencia en animacion y css</p>
+                    <div class="card-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-metrics">
+                        <span><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article class="project-card" data-project="cv">
+                <div class="card-image" style="background-color: #2ecc71;"></div>
+                <div class="card-content">
+                    <h3>CV</h3>
+                    <p class="card-description">sostenible y responsive</p>
+                    <div class="card-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 3 -->
+            <article class="project-card" data-project="tech">
+                <div class="card-image" style="background-color: #e74c3c;"></div>
+                <div class="card-content">
+                    <h3>Tech Future 2025</h3>
+                    <p class="card-description">Evento sobre tendencias tecnológicas</p>
+                    <div class="card-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 4 -->
+            <article class="project-card" data-project="portfolio">
+                <div class="card-image" style="background-color: #9b59b6;"></div>
+                <div class="card-content">
+                    <h3>Portfolio Personal</h3>
+                    <p class="card-description">Sitio web personal responsivo</p>
+                    <div class="card-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 5 -->
+            <article class="project-card" data-project="clima">
+                <div class="card-image" style="background-color: #f1c40f;"></div>
+                <div class="card-content">
+                    <h3>Rubik</h3>
+                    <p class="card-description">Animacion en css</p>
+                    <div class="card-tags">
+                        <span>React</span>
+                        <span>API</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 6 -->
+            <article class="project-card" data-project="ecommerce">
+                <div class="card-image" style="background-color: #1abc9c;"></div>
+                <div class="card-content">
+                    <h3>tienda de tatuajes</h3>
+                    <p class="card-description">Corpus tattoo</p>
+                    <div class="card-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Modales de proyectos -->
+    <div class="project-modal" id="modal-infografia">
+        <div class="project-modal-content">
+            <button class="close-project-modal" aria-label="Cerrar">&times;</button>
+            <div class="project-modal-header" style="background-color: #3498db;">
+                <div class="modal-image-container">
+                    <img src="./assets/portfolioimg/convertido_10.webp" alt="Infografía" class="modal-image">
+                </div>
+                <h2>Infografía Digital</h2>
+            </div>
+            <div class="project-modal-body">
+                <a href="https://ddepazos.github.io/infografia1/" target="_blank" class="project-link">Ver proyecto en vivo</a>
+                <p>Visualiza la información de forma clara y efectiva. Transformamos datos en diseños impactantes con infografías atractivas y funcionales. A través de ilustraciones detalladas, tipografías legibles y una estructura intuitiva, hacemos que la información compleja sea fácil de comprender. Potencia tu mensaje con un diseño visual que capte la atención y comunique con precisión.</p>
+                <div class="project-details">
+                    <h3>Tecnologías utilizadas:</h3>
+                    <ul class="tech-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CV Interactivo -->
+    <div class="project-modal" id="modal-cv">
+        <div class="project-modal-content">
+            <button class="close-project-modal" aria-label="Cerrar">&times;</button>
+            <div class="project-modal-header" style="background-color: #2ecc71;">
+                <div class="modal-image-container">
+                    <img src="./assets/portfolioimg/convertido_4.webp" alt="CV Interactivo" class="modal-image">
+                </div>
+                <h2>CV Interactivo</h2>
+            </div>
+            <div class="project-modal-body">
+                <a href="https://diegopazos1984.github.io/cv/" target="_blank" class="project-link">Ver proyecto en vivo</a>
+                <p>CV Interactivo en HTML, CSS y JavaScript. Diseñé un Currículum Vitae interactivo utilizando HTML, CSS y JavaScript, asegurando una presentación profesional y dinámica dentro del portafolio web. Con una estructura semántica optimizada, estilos modernos y efectos visuales sutiles, logramos un diseño atractivo y responsive.</p>
+                <div class="project-details">
+                    <h3>Tecnologías utilizadas:</h3>
+                    <ul class="tech-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tech Future -->
+    <div class="project-modal" id="modal-tech">
+        <div class="project-modal-content">
+            <button class="close-project-modal" aria-label="Cerrar">&times;</button>
+            <div class="project-modal-header" style="background-color: #e74c3c;">
+                <div class="modal-image-container">
+                    <img src="./assets/portfolioimg/convertido_17.webp" alt="Tech Future 2025" class="modal-image">
+                </div>
+                <h2>Tech Future 2025</h2>
+            </div>
+            <div class="project-modal-body">
+                <a href="https://ddepazos.github.io/" target="_blank" class="project-link">Ver proyecto en vivo</a>
+                <p>Proyecto Tech Future 2025. En el marco de Tech Future 2025, desarrollé una landing page interactiva y altamente funcional para promover un evento enfocado en innovación tecnológica y tendencias del futuro.</p>
+                <div class="project-details">
+                    <h3>Tecnologías utilizadas:</h3>
+                    <ul class="tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Portfolio -->
+    <div class="project-modal" id="modal-portfolio">
+        <div class="project-modal-content">
+            <button class="close-project-modal" aria-label="Cerrar">&times;</button>
+            <div class="project-modal-header" style="background-color: #9b59b6;">
+                <img src="./assets/portfolioimg/convertido_2.webp" alt="Portfolio Personal" class="modal-image">
+                <h2>Portfolio Personal</h2>
+            </div>
+            <div class="project-modal-body">
+                <a href="" target="_blank" class="project-link">Ver proyecto en vivo</a>
+                <p>Descripción del proyecto.</p>
+                <div class="project-details">
+                    <h3>Tecnologías utilizadas:</h3>
+                    <ul class="tech-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rubik -->
+    <div class="project-modal" id="modal-clima">
+        <div class="project-modal-content">
+            <button class="close-project-modal" aria-label="Cerrar">&times;</button>
+            <div class="project-modal-header" style="background-color: #f1c40f;">
+                <img src="./assets/portfolioimg/convertido_16.webp" alt="Cubo Rubik Interactivo" class="modal-image">
+                <h2>Cubo Rubik Interactivo</h2>
+            </div>
+            <div class="project-modal-body">
+                <p>Desarrollé un Cubo Rubik interactivo utilizando tecnologías web modernas, combinando lógica de programación y diseño 3D para crear una experiencia dinámica y funcional. El proyecto incluye animaciones suaves y controles intuitivos para una mejor experiencia de usuario.</p>
+                
+                <div class="project-links">
+                    <a href="https://ddepazos.github.io/rubik-landing/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Ver proyecto en vivo
+                    </a>
+                    <a href="https://github.com/ddepazos/rubik-landing" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Ver código fuente
+                    </a>
+                </div>
+
+                <div class="project-details">
+                    <h3>Tecnologías utilizadas:</h3>
+                    <ul class="tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Three.js</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tienda Tatuajes -->
+    <div class="project-modal" id="modal-ecommerce">
+        <div class="project-modal-content">
+            <button class="close-project-modal" aria-label="Cerrar">&times;</button>
+            <div class="project-modal-header" style="background-color: #1abc9c;">
+                <img src="./assets/portfolioimg/convertido_3.webp" alt="Tienda de Tatuajes" class="modal-image">
+                <h2>Tienda de Tatuajes</h2>
+            </div>
+            <div class="project-modal-body">
+                <a href="" target="_blank" class="project-link">Ver proyecto en vivo</a>
+                <p>Descripción del proyecto.</p>
+                <div class="project-details">
+                    <h3>Tecnologías utilizadas:</h3>
+                    <ul class="tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sección de Galería -->
+    <section class="gallery-section">
+        <div class="gallery-category">
+            <h2>Proyectos de diseño e ilustración</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-type="project" data-index="1">
+                    <a href="" target="_blank">
+                        <img src="./assets/portfolioimg/convertido_1.webp" alt="Infografía" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item" data-type="project" data-index="2">
+                    <a href="" target="_blank">
+                        <img src="./assets/portfolioimg/convertido_12.webp" alt="Ilustración niña" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item" data-type="project" data-index="3">
+                    <a href="" target="_blank">
+                        <img src="./assets/portfolioimg/convertido_6.webp" alt="Portafolios foto" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item" data-type="project" data-index="4">
+                    <a href="" target="_blank">
+                        <img src="./assets/portfolioimg/convertido_7.webp" alt="Logos" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item" data-type="project" data-index="5">
+                    <img src="./assets/portfolioimg/convertido_8.webp" alt="Ilustración" loading="lazy">
+                </div>
+                <div class="gallery-item" data-type="project" data-index="6">
+                    <img src="./assets/portfolioimg/convertido_9.webp" alt="Ilustración 2" loading="lazy">
+                </div>
+                <div class="gallery-item" data-type="project" data-index="7">
+                    <img src="./assets/portfolioimg/convertido_11.webp" alt="Ilustración 3" loading="lazy">
+                </div>
+                <div class="gallery-item" data-type="project" data-index="8">
+                    <img src="./assets/portfolioimg/convertido_15.webp" alt="Ilustraciones Compiladas" loading="lazy">
+                </div>
+                <div class="gallery-item" data-type="project" data-index="9">
+                    <img src="./assets/portfolioimg/convertido_20.webp" alt="Portada portafolios foto" loading="lazy">
+                </div>
+                <div class="gallery-item" data-type="project" data-index="10">
+                    <a href="" target="_blank">
+                        <img src="./assets/portfolioimg/convertido_18.webp" alt="Logo agencia Triad" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item" data-type="project" data-index="11">
+                    <a href="" target="_blank">
+                        <img src="./assets/portfolioimg/convertido_13.webp" alt="Ilustración vectorial" loading="lazy">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/portfolioimg/Captura de pantalla 2025-01-30 222605.png" alt="Imagen aleatoria" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para la galería -->
+    <div class="gallery-modal">
+        <div class="gallery-modal-content">
+            <div class="gallery-modal-image-container">
+                <img src="" alt="" class="gallery-modal-image">
+            </div>
+            <div class="gallery-modal-info">
+                <h3 class="gallery-modal-title"></h3>
+                <p class="gallery-modal-description"></p>
+            </div>
+            <button class="close-gallery-modal" aria-label="Cerrar">&times;</button>
+            <div class="gallery-modal-nav">
+                <button class="gallery-prev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="gallery-next" aria-label="Siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modificar la estructura del footer -->
+    <footer class="main-footer">
+        <div class="tech-slider">
+            <h3>Tecnologías y Herramientas</h3>
+            <div class="slider-container">
+                <div class="slider-track">
+                    <!-- Primera serie de logos -->
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg" alt="After Effects"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg" alt="Premiere"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD"/>
+                    </div>
+                    <!-- Duplicar para el bucle continuo -->
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg" alt="After Effects"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg" alt="Premiere"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"/>
+                    </div>
+                    <div class="technology-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Diego Pazos</h3>
+                <p>Desarrollador, Diseñador Gráfico, Diseñador Ux/UI</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/diego-alonso-nicolas-pazos-navarretre-4a27a6337/" class="social-icon linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ddepazos" class="social-icon github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.behance.net/diegopazos77e2" class="social-icon behance">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Diego Pazos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/56932036012" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal de Contacto -->
+    <div id="contact-modal" class="contact-modal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Cerrar">&times;</button>
+            <h3>Envíame un mensaje</h3>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="from_name">Nombre:</label>
+                    <input type="text" id="from_name" name="from_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reply_to">Email:</label>
+                    <input type="email" id="reply_to" name="reply_to" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/gallery.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</body>
+</html>
