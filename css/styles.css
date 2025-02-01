@@ -390,7 +390,7 @@ a:hover {
 /* Sección Hero */
 .hero-section {
     height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.581), rgba(255, 255, 255, 0.563)),
+    background: linear-gradient(rgba(19, 19, 46, 0.118), rgba(75, 75, 79, 0.348)),
                 url('/assets/portfolioimg/convertido_5.webp');
     background-size: cover;
     background-position: center;
