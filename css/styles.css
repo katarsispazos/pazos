@@ -2422,4 +2422,6 @@ a:hover {
             transform: translateX(calc(-80px * 8 - 3rem * 8));
         }
     }
+}.project-modal a {
+  text-decoration: none;
 }
